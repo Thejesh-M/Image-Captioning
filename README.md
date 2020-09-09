@@ -15,7 +15,8 @@ where each image consists of 5 captions with a similar meaning.
 ## Encoder
 The Convolutional Neural Network(CNN) can be thought of as an encoder. The input image is given to CNN to extract the features. 
 The last hidden state of the CNN is connected to the Decoder. I used Resnet50 to encode the images by removing the top layers and fedding
-the flatten layer information to the decoder
+the flatten layer information to the decoder.
+
 ![deconv_overall](./resnet.png)
 
 ## Decoder
