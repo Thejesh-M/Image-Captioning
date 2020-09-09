@@ -17,7 +17,7 @@ The Convolutional Neural Network(CNN) can be thought of as an encoder. The input
 The last hidden state of the CNN is connected to the Decoder. I used Resnet50 to encode the images by removing the top layers and fedding
 the flatten layer information to the decoder.
 
-![deconv_overall](./resnet.png)
+![deconv_overall](./resent.png)
 
 ## Decoder
 The Long Short Term Memory(LSTM) which does language modelling up to the word level. The first time step receives the encoded output
