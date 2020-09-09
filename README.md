@@ -25,8 +25,13 @@ from the encoder and also the <START> vector.
 ![deconv_overall](./lstm.png) 
   
 ## Training:
-The output from the last hidden state of the CNN(Encoder) is given to the first time step of the decoder. We set x1 =<START> vector and the desired label y1 = first word in the sequence. Analogously, we set x2 =word vector of the first word and expect the network to predict the second word. Finally, on the last step, xT = last word, the target label yT =<END> token.
+The output from the last hidden state of the CNN(Encoder) is given to the first time step of the decoder. We set x1 =<START> vector and 
+  the desired label y1 = first word in the sequence. Analogously, we set x2 =word vector of the first word and expect the network to 
+  predict the second word. Finally, on the last step, xT = last word, the target label yT =<END> token.
 
-
+## Testing:
+The image representation is provided to the first time step of the decoder. Set x1 =<START> vector and compute the distribution over
+  the first word y1. We sample a word from the distribution (or pick the argmax), set its embedding vector as x2, and repeat this process
+  until the <END> token is generated.
 
 
